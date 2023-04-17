@@ -50,7 +50,6 @@ function removeMemo() {
   const check = confirm('삭제하시겠습니까?');
   if (check) {
     const idx = allMemo.find((item) => item.len == event.srcElement.id);
-    console.log(idx);
 
     if (idx) {
       allMemo.splice(
@@ -59,7 +58,6 @@ function removeMemo() {
       );
     }
 
-    console.log(allMemo);
     localStorage.setItem('allMemo', JSON.stringify(allMemo));
     render();
   } else return;
