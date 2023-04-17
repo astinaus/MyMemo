@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나만의 메모장 | Astin</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="header">나만의 메모장</h1>
+    <main class="container">
+        <section id="input">
+            <label class="a11y-hidden" for="title">제목</label>
+            <input type="text" name="" id="title" placeholder="제목" />
+            <textarea name="" id="content" cols="30" rows="10"></textarea>
+            <button type="button" onclick="saveNote()">메모</button>
+        </section>
+        <section id="output">
+            <article class="memo">
+                <h2>오늘의 메모</h2>
+                <p>밥을 먹었다. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam impedit sint dolore,
+                    laudantium reiciendis magnam voluptatem praesentium voluptatum dignissimos cum nisi voluptatibus
+                    velit voluptate a omnis sapiente dolores possimus ullam.</p>
+                <button>삭제</button>
+            </article>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
