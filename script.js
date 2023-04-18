@@ -1,11 +1,11 @@
+const titleId = document.getElementById('title');
+const contentId = document.getElementById('content');
 let allMemo = JSON.parse(localStorage.getItem('allMemo'));
 
 allMemo = allMemo ?? [];
 render();
 
 function saveNote() {
-  const titleId = document.getElementById('title');
-  const contentId = document.getElementById('content');
   const title = titleId.value;
   const content = contentId.value;
 
