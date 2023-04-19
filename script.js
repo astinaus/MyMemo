@@ -9,6 +9,8 @@ function saveNote() {
   const title = titleId.value;
   const content = contentId.value;
 
+  if (!title || !content) return alert('제목과 내용을 입력해주세요.');
+
   allMemo.push({ title, content, len: allMemo.length });
 
   localStorage.setItem('allMemo', JSON.stringify(allMemo));
